@@ -557,26 +557,28 @@
         autoplay-delay="2500"
         autoplay-disable-on-interaction="false"
       >
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <div class="product-bg">
             <div class="product-head d-flex position-relative">
               <h5 class="product-box">24%</h5>
               <div class="product-box1"></div>
               <div class="product-box2"></div>
-              <div class="product-icons product-box3">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-repeat"></i>
-                <i class="bi bi-bag"></i>
+               <div class="product-icons product-box3">
+                <div class="pr-icon">
+                  <i class="bi bi-heart"></i>
+                  <i class="bi bi-repeat"></i>
+                  <i class="bi bi-bag"></i>
+                </div>
               </div>
             </div>
             <div class="pagination d-flex justify-content-between">
-              <div class="page-bar active"></div>
+              <div class="page-bar hovered"></div>
               <div class="page-bar1"></div>
               <div class="page-bar2"></div>
               <div class="page-bar3"></div>
             </div>
-            <div class="product-deatil pt-2 pb-2">
-              <h6 class="d-flex align-items-center">
+            <div class="product-detail pt-1 pb-2">
+              <h6 class="d-flex align-items-center py-1">
                 <img
                   src="./product-img/star (7).png"
                   alt=""
@@ -593,7 +595,7 @@
             <div class="page-bar">1</div>
           </div>
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <div class="product-bg">
             <div
               class="product-head1 d-flex justify-content-between position-relative"
@@ -601,20 +603,22 @@
               <h5 class="product-box">Trending</h5>
               <div class="product-box1"></div>
               <div class="product-box2"></div>
-              <div class="product-icons product-box3">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-repeat"></i>
-                <i class="bi bi-bag"></i>
-              </div>
+                <div class="product-icons product-box3">
+                 <div class="pr-icon">
+                  <i class="bi bi-heart"></i>
+                  <i class="bi bi-repeat"></i>
+                  <i class="bi bi-bag"></i>
+                 </div>
+                </div>
             </div>
             <div class="pagination d-flex justify-content-between">
-              <div class="page-bar active"></div>
+              <div class="page-bar hovered"></div>
               <div class="page-bar1"></div>
               <div class="page-bar2"></div>
               <div class="page-bar3"></div>
             </div>
-            <div class="product-deatil pt-2 pb-2">
-              <h6 class="d-flex align-items-center">
+            <div class="product-detail pt-1 pb-2">
+              <h6 class="d-flex align-items-center py-1">
                 <img
                   src="./product-img/star (7).png"
                   alt=""
@@ -628,7 +632,7 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <div class="product-bg">
             <div
               class="product-head2 d-flex justify-content-between position-relative"
@@ -636,20 +640,22 @@
               <h5 class="product-box">17%</h5>
               <div class="product-box1"></div>
               <div class="product-box2"></div>
-              <div class="product-icons product-box3">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-repeat"></i>
-                <i class="bi bi-bag"></i>
+               <div class="product-icons product-box3">
+                <div class="pr-icon">
+                  <i class="bi bi-heart"></i>
+                  <i class="bi bi-repeat"></i>
+                  <i class="bi bi-bag"></i>
+                </div>
               </div>
             </div>
             <div class="pagination d-flex justify-content-between">
-              <div class="page-bar active"></div>
+              <div class="page-bar hovered"></div>
               <div class="page-bar1"></div>
               <div class="page-bar2"></div>
               <div class="page-bar3"></div>
             </div>
-            <div class="product-deatil pt-2 pb-2">
-              <h6 class="d-flex align-items-center">
+            <div class="product-detail pt-1 pb-2">
+              <h6 class="d-flex align-items-center py-1">
                 <img
                   src="./product-img/star (7).png"
                   alt=""
@@ -663,7 +669,7 @@
             </div>
           </div>
         </swiper-slide>
-        <swiper-slide>
+        <swiper-slide class="swiper-slide">
           <div class="product-bg">
             <div
               class="product-head3 d-flex justify-content-between position-relative"
@@ -672,9 +678,11 @@
               <div class="product-box1"></div>
               <div class="product-box2"></div>
               <div class="product-icons product-box3">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-repeat"></i>
-                <i class="bi bi-bag"></i>
+                <div class="pr-icon">
+                  <i class="bi bi-heart"></i>
+                  <i class="bi bi-repeat"></i>
+                  <i class="bi bi-bag"></i>
+                </div>
               </div>
             </div>
             <div class="pagination d-flex justify-content-between">
@@ -683,8 +691,8 @@
               <div class="page-bar2"></div>
               <div class="page-bar3"></div>
             </div>
-            <div class="product-deatil pt-2 pb-2">
-              <h6 class="d-flex align-items-center">
+            <div class="product-detail pt-1 pb-2">
+              <h6 class="d-flex align-items-center py-1">
                 <img
                   src="./product-img/star (7).png"
                   alt=""
@@ -962,7 +970,7 @@
     <script>
    
       document.addEventListener('DOMContentLoaded', function() {
-    const slides = document.querySelectorAll('swiper-slide');
+    const slides = document.querySelectorAll('.swiper-slide');
 
     slides.forEach(slide => {
         const productHead = slide.querySelector('.product-head, .product-head1, .product-head2, .product-head3');
